@@ -1,33 +1,35 @@
- 1 Option Explicit
- 2 
- 3 'Application.OnTime
- 4 'Application.OnKey
- 5 'Application.WorksheetFunction
- 6 'Application.Goto
- 7 'Application.Union
- 8 
- 9 '绑定按键
-10 Sub BindingKey()
-11     Application.OnKey "%.", "NextPage"
-12     Application.OnKey "%,", "PrevPage"
-13 End Sub
-14 
-15 '向下
-16 Sub NextPage()
-17     ActiveWindow.LargeScroll down:=1
-18 End Sub
-19 
-20 '向上
-21 Sub PrevPage()
-22     ActiveWindow.LargeScroll up:=1
-23 End Sub
-24 
-25 '解除按键绑定
-26 Sub UnbindingKey()
-27     Application.OnKey "%."
-28     Application.OnKey "%,"
-29 End Sub
-30 
-31 '内置函数
-32 'Application.WorksheetFunction.VLookup
-33 'Application.WorksheetFunction.CountIf
+```VBA
+Option Explicit
+
+'Application.OnTime
+'Application.OnKey
+'Application.WorksheetFunction
+'Application.Goto
+'Application.Union
+
+'绑定按键
+Sub BindingKey()
+    Application.OnKey "%.", "NextPage"
+    Application.OnKey "%,", "PrevPage"
+End Sub
+
+'向下
+Sub NextPage()
+    ActiveWindow.LargeScroll down:=1
+End Sub
+
+'向上
+Sub PrevPage()
+    ActiveWindow.LargeScroll up:=1
+End Sub
+
+'解除按键绑定
+Sub UnbindingKey()
+    Application.OnKey "%."
+    Application.OnKey "%,"
+End Sub
+
+'内置函数
+'Application.WorksheetFunction.VLookup
+'Application.WorksheetFunction.CountIf
+```
